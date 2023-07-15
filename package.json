@@ -1,0 +1,41 @@
+{
+  "name": "pactljson",
+  "version": "1.0.0",
+  "description": "A fully featured pactl wrapper that outputs JSON instead of pactl's native format.",
+  "main": "index.js",
+  "bin": {
+    "pactljson": "cli.mjs"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha ./test/test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T-vK/pactljson.git"
+  },
+  "keywords": [
+    "pactl",
+    "pulseaudio",
+    "audio",
+    "pulse",
+    "linux",
+    "json",
+    "cli"
+  ],
+  "author": "T-vK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/T-vK/pactljson/issues"
+  },
+  "homepage": "https://github.com/T-vK/pactljson#readme",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  },
+  "mocha": {
+    "timeout": 5000
+  }
+}

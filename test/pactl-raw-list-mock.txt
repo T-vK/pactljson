@@ -1,0 +1,2057 @@
+Module #1
+	Name: libpipewire-module-rt
+	Argument: {
+            nice.level    = -11
+            #rt.prio      = 88
+            #rt.time.soft = -1
+            #rt.time.hard = -1
+        }
+	Usage counter: n/a
+	Properties:
+		module.name = "libpipewire-module-rt"
+		object.id = "1"
+		object.serial = "1"
+		module.author = "Wim Taymans <wim.taymans@gmail.com>"
+		module.description = "Use realtime thread scheduling, falling back to RTKit"
+		module.usage = "[nice.level=<priority: default 20(don't change)>] [rt.prio=<priority: default 88>] [rt.time.soft=<in usec: default -1] [rt.time.hard=<in usec: default -1] "
+		module.version = "0.3.56"
+		nice.level = "-11"
+
+Module #2
+	Name: libpipewire-module-protocol-native
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.name = "libpipewire-module-protocol-native"
+		object.id = "2"
+		object.serial = "2"
+		module.author = "Wim Taymans <wim.taymans@gmail.com>"
+		module.description = "Native protocol using unix sockets"
+		module.version = "0.3.56"
+
+Module #3
+	Name: libpipewire-module-profiler
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.name = "libpipewire-module-profiler"
+		object.id = "3"
+		object.serial = "3"
+		module.author = "Wim Taymans <wim.taymans@gmail.com>"
+		module.description = "Generate Profiling data"
+		module.version = "0.3.56"
+
+Module #5
+	Name: libpipewire-module-metadata
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.name = "libpipewire-module-metadata"
+		object.id = "5"
+		object.serial = "5"
+		module.author = "Wim Taymans <wim.taymans@gmail.com>"
+		module.description = "Allow clients to create metadata store"
+		module.version = "0.3.56"
+
+Module #7
+	Name: libpipewire-module-spa-device-factory
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.name = "libpipewire-module-spa-device-factory"
+		object.id = "7"
+		object.serial = "7"
+		module.author = "Wim Taymans <wim.taymans@gmail.com>"
+		module.description = "Provide a factory to make SPA devices"
+		module.version = "0.3.56"
+
+Module #9
+	Name: libpipewire-module-spa-node-factory
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.name = "libpipewire-module-spa-node-factory"
+		object.id = "9"
+		object.serial = "9"
+		module.author = "Wim Taymans <wim.taymans@gmail.com>"
+		module.description = "Provide a factory to make SPA nodes"
+		module.version = "0.3.56"
+
+Module #11
+	Name: libpipewire-module-client-node
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.name = "libpipewire-module-client-node"
+		object.id = "11"
+		object.serial = "11"
+		module.author = "Wim Taymans <wim.taymans@gmail.com>"
+		module.description = "Allow clients to create and control remote nodes"
+		module.version = "0.3.56"
+
+Module #13
+	Name: libpipewire-module-client-device
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.name = "libpipewire-module-client-device"
+		object.id = "13"
+		object.serial = "13"
+		module.author = "Wim Taymans <wim.taymans@gmail.com>"
+		module.description = "Allow clients to create and control remote devices"
+		module.version = "0.3.56"
+
+Module #15
+	Name: libpipewire-module-portal
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.name = "libpipewire-module-portal"
+		object.id = "15"
+		object.serial = "15"
+
+Module #16
+	Name: libpipewire-module-access
+	Argument: {
+            # access.allowed to list an array of paths of allowed
+            # apps.
+            #access.allowed = [
+            #    /usr/bin/pipewire-media-session
+            #]
+
+            # An array of rejected paths.
+            #access.rejected = [ ]
+
+            # An array of paths with restricted access.
+            #access.restricted = [ ]
+
+            # Anything not in the above lists gets assigned the
+            # access.force permission.
+            #access.force = flatpak
+        }
+	Usage counter: n/a
+	Properties:
+		module.name = "libpipewire-module-access"
+		object.id = "16"
+		object.serial = "16"
+		module.author = "Wim Taymans <wim.taymans@gmail.com>"
+		module.description = "Perform access check"
+		module.usage = "[ access.force=flatpak ] [ access.allowed=<cmd-line> ] [ access.rejected=<cmd-line> ] [ access.restricted=<cmd-line> ] "
+		module.version = "0.3.56"
+
+Module #17
+	Name: libpipewire-module-adapter
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.name = "libpipewire-module-adapter"
+		object.id = "17"
+		object.serial = "17"
+		module.author = "Wim Taymans <wim.taymans@gmail.com>"
+		module.description = "Manage adapter nodes"
+		module.version = "0.3.56"
+
+Module #19
+	Name: libpipewire-module-link-factory
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.name = "libpipewire-module-link-factory"
+		object.id = "19"
+		object.serial = "19"
+		module.author = "Wim Taymans <wim.taymans@gmail.com>"
+		module.description = "Allow clients to create links"
+		module.version = "0.3.56"
+
+Module #21
+	Name: libpipewire-module-session-manager
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.name = "libpipewire-module-session-manager"
+		object.id = "21"
+		object.serial = "21"
+		module.author = "George Kiagiadakis <george.kiagiadakis@collabora.com>"
+		module.description = "Implements objects for session management"
+		module.version = "0.3.56"
+
+Module #536870912
+	Name: module-always-sink
+	Argument: 
+	Usage counter: n/a
+	Properties:
+		module.author = "Pauli Virtanen <pav@iki.fi>"
+		module.description = "Always keeps at least one sink loaded even if it's a null one"
+		module.usage = "sink_name=<name of sink>"
+		module.version = "0.3.56"
+
+Sink #547
+	State: RUNNING
+	Name: alsa_output.pci-0000_00_1f.3.analog-stereo
+	Description: Built-in Audio Analog Stereo
+	Driver: PipeWire
+	Sample Specification: s32le 2ch 48000Hz
+	Channel Map: front-left,front-right
+	Owner Module: 4294967295
+	Mute: no
+	Volume: front-left: 43252 /  66% / -10.83 dB,   front-right: 43252 /  66% / -10.83 dB
+	        balance 0.00
+	Base Volume: 65536 / 100% / 0.00 dB
+	Monitor Source: alsa_output.pci-0000_00_1f.3.analog-stereo.monitor
+	Latency: 0 usec, configured 0 usec
+	Flags: HARDWARE HW_MUTE_CTRL HW_VOLUME_CTRL DECIBEL_VOLUME LATENCY 
+	Properties:
+		object.path = "alsa:pcm:0:front:0:playback"
+		api.alsa.path = "front:0"
+		api.alsa.pcm.card = "0"
+		api.alsa.pcm.stream = "playback"
+		audio.channels = "2"
+		audio.position = "FL,FR"
+		device.routes = "2"
+		alsa.resolution_bits = "16"
+		device.api = "alsa"
+		device.class = "sound"
+		alsa.class = "generic"
+		alsa.subclass = "generic-mix"
+		alsa.name = "ALC3271 Analog"
+		alsa.id = "ALC3271 Analog"
+		alsa.subdevice = "0"
+		alsa.subdevice_name = "subdevice #0"
+		alsa.device = "0"
+		alsa.card = "0"
+		alsa.card_name = "HDA Intel PCH"
+		alsa.long_card_name = "HDA Intel PCH at 0xec510000 irq 153"
+		alsa.driver_name = "snd_hda_intel"
+		device.profile.name = "analog-stereo"
+		device.profile.description = "Analog Stereo"
+		card.profile.device = "8"
+		device.id = "40"
+		factory.name = "api.alsa.pcm.sink"
+		priority.driver = "1009"
+		priority.session = "1009"
+		media.class = "Audio/Sink"
+		node.nick = "HDA Intel PCH"
+		node.name = "alsa_output.pci-0000_00_1f.3.analog-stereo"
+		device.description = "Built-in Audio"
+		device.icon_name = "audio-card-analog"
+		device.bus = "pci"
+		device.bus_path = "pci-0000:00:1f.3"
+		device.form_factor = "internal"
+		node.pause-on-idle = "false"
+		factory.id = "18"
+		clock.quantum-limit = "8192"
+		client.id = "32"
+		node.driver = "true"
+		factory.mode = "merge"
+		audio.adapt.follower = ""
+		library.name = "audioconvert/libspa-audioconvert"
+		object.id = "187"
+		object.serial = "547"
+		node.max-latency = "16384/48000"
+		device.enum.api = "udev"
+		api.alsa.card = "0"
+		api.alsa.card.name = "HDA Intel PCH"
+		api.alsa.card.longname = "HDA Intel PCH at 0xec510000 irq 153"
+		device.plugged.usec = "22073351"
+		sysfs.path = "/sys/devices/pci0000:00/0000:00:1f.3/sound/card0"
+		device.subsystem = "sound"
+		device.vendor.id = "0x8086"
+		device.vendor.name = "Intel Corporation"
+		device.product.id = "0xa171"
+		device.product.name = "CM238 HD Audio Controller"
+		device.name = "alsa_card.pci-0000_00_1f.3"
+		device.nick = "HDA Intel PCH"
+		api.alsa.use-acp = "true"
+		api.acp.auto-profile = "false"
+		api.acp.auto-port = "false"
+		api.dbus.ReserveDevice1 = "Audio0"
+		device.string = "0"
+	Ports:
+		analog-output-speaker: Speakers (type: Speaker, priority: 10000, availability group: Legacy 3, availability unknown)
+		analog-output-headphones: Headphones (type: Headphones, priority: 9900, availability group: Legacy 2, not available)
+	Active Port: analog-output-speaker
+	Formats:
+		pcm
+
+Sink #1058
+	State: IDLE
+	Name: alsa_output.usb-Behringer_FLOW_8_03-FF-02-11-55-44-00.Direct__hw_F8__sink
+	Description: FLOW 8 Direct FLOW 8
+	Driver: PipeWire
+	Sample Specification: s32le 4ch 48000Hz
+	Channel Map: front-left,front-right,rear-left,rear-right
+	Owner Module: 4294967295
+	Mute: no
+	Volume: front-left: 48287 /  74% / -7.96 dB,   front-right: 48287 /  74% / -7.96 dB,   rear-left: 48287 /  74% / -7.96 dB,   rear-right: 48287 /  74% / -7.96 dB
+	        balance 0.00
+	Base Volume: 65536 / 100% / 0.00 dB
+	Monitor Source: alsa_output.usb-Behringer_FLOW_8_03-FF-02-11-55-44-00.Direct__hw_F8__sink.monitor
+	Latency: 0 usec, configured 0 usec
+	Flags: HARDWARE DECIBEL_VOLUME LATENCY 
+	Properties:
+		object.path = "alsa:pcm:1:hw:F8:playback"
+		api.alsa.path = "hw:F8"
+		api.alsa.open.ucm = "true"
+		api.alsa.pcm.card = "1"
+		api.alsa.pcm.stream = "playback"
+		audio.channels = "4"
+		audio.position = "FL,FR,RL,RR"
+		device.routes = "1"
+		alsa.mixer_device = "_ucm0005.hw:F8"
+		alsa.resolution_bits = "32"
+		device.api = "alsa"
+		device.class = "sound"
+		alsa.class = "generic"
+		alsa.subclass = "generic-mix"
+		alsa.name = "USB Audio"
+		alsa.id = "USB Audio"
+		alsa.subdevice = "0"
+		alsa.subdevice_name = "subdevice #0"
+		alsa.device = "0"
+		alsa.card = "1"
+		alsa.card_name = "FLOW 8"
+		alsa.long_card_name = "Behringer FLOW 8 at usb-0000:00:14.0-11, high speed"
+		alsa.driver_name = "snd_usb_audio"
+		device.profile.name = "Direct: hw:F8: sink"
+		device.profile.description = "Direct FLOW 8"
+		card.profile.device = "0"
+		device.id = "146"
+		factory.name = "api.alsa.pcm.sink"
+		priority.driver = "936"
+		priority.session = "936"
+		media.class = "Audio/Sink"
+		node.nick = "FLOW 8"
+		node.name = "alsa_output.usb-Behringer_FLOW_8_03-FF-02-11-55-44-00.Direct__hw_F8__sink"
+		device.description = "FLOW 8"
+		device.icon_name = "audio-card"
+		device.bus = "usb"
+		device.bus_path = "pci-0000:00:14.0-usb-0:11:1.0"
+		node.pause-on-idle = "false"
+		factory.id = "18"
+		clock.quantum-limit = "8192"
+		client.id = "32"
+		node.driver = "true"
+		factory.mode = "merge"
+		audio.adapt.follower = ""
+		library.name = "audioconvert/libspa-audioconvert"
+		object.id = "80"
+		object.serial = "1058"
+		node.max-latency = "16384/48000"
+		device.enum.api = "udev"
+		api.alsa.card = "1"
+		api.alsa.card.name = "FLOW 8"
+		api.alsa.card.longname = "Behringer FLOW 8 at usb-0000:00:14.0-11, high speed"
+		device.plugged.usec = "52837408425"
+		sysfs.path = "/sys/devices/pci0000:00/0000:00:14.0/usb1/1-11/1-11:1.0/sound/card1"
+		device.bus-id = "usb-Behringer_FLOW_8_03-FF-02-11-55-44-00"
+		device.subsystem = "sound"
+		device.vendor.id = "0x1397"
+		device.vendor.name = "BEHRINGER International GmbH"
+		device.product.id = "0x050c"
+		device.product.name = "FLOW 8"
+		device.serial = "Behringer_FLOW_8_03-FF-02-11-55-44"
+		device.name = "alsa_card.usb-Behringer_FLOW_8_03-FF-02-11-55-44-00"
+		device.nick = "FLOW 8"
+		api.alsa.use-acp = "true"
+		api.acp.auto-profile = "false"
+		api.acp.auto-port = "false"
+		api.dbus.ReserveDevice1 = "Audio1"
+		device.string = "1"
+	Ports:
+		[Out] Direct: Direct FLOW 8 (type: Unknown, priority: 1000, availability unknown)
+	Active Port: [Out] Direct
+	Formats:
+		pcm
+
+Source #547
+	State: RUNNING
+	Name: alsa_output.pci-0000_00_1f.3.analog-stereo.monitor
+	Description: Monitor of Built-in Audio Analog Stereo
+	Driver: PipeWire
+	Sample Specification: s32le 2ch 48000Hz
+	Channel Map: front-left,front-right
+	Owner Module: 4294967295
+	Mute: no
+	Volume: front-left: 65536 / 100% / 0.00 dB,   front-right: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	Base Volume: 65536 / 100% / 0.00 dB
+	Monitor of Sink: alsa_output.pci-0000_00_1f.3.analog-stereo
+	Latency: 0 usec, configured 0 usec
+	Flags: HARDWARE DECIBEL_VOLUME LATENCY 
+	Properties:
+		object.path = "alsa:pcm:0:front:0:playback"
+		api.alsa.path = "front:0"
+		api.alsa.pcm.card = "0"
+		api.alsa.pcm.stream = "playback"
+		audio.channels = "2"
+		audio.position = "FL,FR"
+		device.routes = "2"
+		alsa.resolution_bits = "16"
+		device.api = "alsa"
+		device.class = "monitor"
+		alsa.class = "generic"
+		alsa.subclass = "generic-mix"
+		alsa.name = "ALC3271 Analog"
+		alsa.id = "ALC3271 Analog"
+		alsa.subdevice = "0"
+		alsa.subdevice_name = "subdevice #0"
+		alsa.device = "0"
+		alsa.card = "0"
+		alsa.card_name = "HDA Intel PCH"
+		alsa.long_card_name = "HDA Intel PCH at 0xec510000 irq 153"
+		alsa.driver_name = "snd_hda_intel"
+		device.profile.name = "analog-stereo"
+		device.profile.description = "Analog Stereo"
+		card.profile.device = "8"
+		device.id = "40"
+		factory.name = "api.alsa.pcm.sink"
+		priority.driver = "1009"
+		priority.session = "1009"
+		media.class = "Audio/Sink"
+		node.nick = "HDA Intel PCH"
+		node.name = "alsa_output.pci-0000_00_1f.3.analog-stereo"
+		device.description = "Built-in Audio"
+		device.icon_name = "audio-card-analog"
+		device.bus = "pci"
+		device.bus_path = "pci-0000:00:1f.3"
+		device.form_factor = "internal"
+		node.pause-on-idle = "false"
+		factory.id = "18"
+		clock.quantum-limit = "8192"
+		client.id = "32"
+		node.driver = "true"
+		factory.mode = "merge"
+		audio.adapt.follower = ""
+		library.name = "audioconvert/libspa-audioconvert"
+		object.id = "187"
+		object.serial = "547"
+		node.max-latency = "16384/48000"
+		device.enum.api = "udev"
+		api.alsa.card = "0"
+		api.alsa.card.name = "HDA Intel PCH"
+		api.alsa.card.longname = "HDA Intel PCH at 0xec510000 irq 153"
+		device.plugged.usec = "22073351"
+		sysfs.path = "/sys/devices/pci0000:00/0000:00:1f.3/sound/card0"
+		device.subsystem = "sound"
+		device.vendor.id = "0x8086"
+		device.vendor.name = "Intel Corporation"
+		device.product.id = "0xa171"
+		device.product.name = "CM238 HD Audio Controller"
+		device.name = "alsa_card.pci-0000_00_1f.3"
+		device.nick = "HDA Intel PCH"
+		api.alsa.use-acp = "true"
+		api.acp.auto-profile = "false"
+		api.acp.auto-port = "false"
+		api.dbus.ReserveDevice1 = "Audio0"
+		device.string = "0"
+	Formats:
+		pcm
+
+Source #1058
+	State: RUNNING
+	Name: alsa_output.usb-Behringer_FLOW_8_03-FF-02-11-55-44-00.Direct__hw_F8__sink.monitor
+	Description: Monitor of FLOW 8 Direct FLOW 8
+	Driver: PipeWire
+	Sample Specification: s32le 4ch 48000Hz
+	Channel Map: front-left,front-right,rear-left,rear-right
+	Owner Module: 4294967295
+	Mute: no
+	Volume: front-left: 65536 / 100% / 0.00 dB,   front-right: 65536 / 100% / 0.00 dB,   rear-left: 65536 / 100% / 0.00 dB,   rear-right: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	Base Volume: 65536 / 100% / 0.00 dB
+	Monitor of Sink: alsa_output.usb-Behringer_FLOW_8_03-FF-02-11-55-44-00.Direct__hw_F8__sink
+	Latency: 0 usec, configured 0 usec
+	Flags: HARDWARE DECIBEL_VOLUME LATENCY 
+	Properties:
+		object.path = "alsa:pcm:1:hw:F8:playback"
+		api.alsa.path = "hw:F8"
+		api.alsa.open.ucm = "true"
+		api.alsa.pcm.card = "1"
+		api.alsa.pcm.stream = "playback"
+		audio.channels = "4"
+		audio.position = "FL,FR,RL,RR"
+		device.routes = "1"
+		alsa.mixer_device = "_ucm0005.hw:F8"
+		alsa.resolution_bits = "32"
+		device.api = "alsa"
+		device.class = "monitor"
+		alsa.class = "generic"
+		alsa.subclass = "generic-mix"
+		alsa.name = "USB Audio"
+		alsa.id = "USB Audio"
+		alsa.subdevice = "0"
+		alsa.subdevice_name = "subdevice #0"
+		alsa.device = "0"
+		alsa.card = "1"
+		alsa.card_name = "FLOW 8"
+		alsa.long_card_name = "Behringer FLOW 8 at usb-0000:00:14.0-11, high speed"
+		alsa.driver_name = "snd_usb_audio"
+		device.profile.name = "Direct: hw:F8: sink"
+		device.profile.description = "Direct FLOW 8"
+		card.profile.device = "0"
+		device.id = "146"
+		factory.name = "api.alsa.pcm.sink"
+		priority.driver = "936"
+		priority.session = "936"
+		media.class = "Audio/Sink"
+		node.nick = "FLOW 8"
+		node.name = "alsa_output.usb-Behringer_FLOW_8_03-FF-02-11-55-44-00.Direct__hw_F8__sink"
+		device.description = "FLOW 8"
+		device.icon_name = "audio-card"
+		device.bus = "usb"
+		device.bus_path = "pci-0000:00:14.0-usb-0:11:1.0"
+		node.pause-on-idle = "false"
+		factory.id = "18"
+		clock.quantum-limit = "8192"
+		client.id = "32"
+		node.driver = "true"
+		factory.mode = "merge"
+		audio.adapt.follower = ""
+		library.name = "audioconvert/libspa-audioconvert"
+		object.id = "80"
+		object.serial = "1058"
+		node.max-latency = "16384/48000"
+		device.enum.api = "udev"
+		api.alsa.card = "1"
+		api.alsa.card.name = "FLOW 8"
+		api.alsa.card.longname = "Behringer FLOW 8 at usb-0000:00:14.0-11, high speed"
+		device.plugged.usec = "52837408425"
+		sysfs.path = "/sys/devices/pci0000:00/0000:00:14.0/usb1/1-11/1-11:1.0/sound/card1"
+		device.bus-id = "usb-Behringer_FLOW_8_03-FF-02-11-55-44-00"
+		device.subsystem = "sound"
+		device.vendor.id = "0x1397"
+		device.vendor.name = "BEHRINGER International GmbH"
+		device.product.id = "0x050c"
+		device.product.name = "FLOW 8"
+		device.serial = "Behringer_FLOW_8_03-FF-02-11-55-44"
+		device.name = "alsa_card.usb-Behringer_FLOW_8_03-FF-02-11-55-44-00"
+		device.nick = "FLOW 8"
+		api.alsa.use-acp = "true"
+		api.acp.auto-profile = "false"
+		api.acp.auto-port = "false"
+		api.dbus.ReserveDevice1 = "Audio1"
+		device.string = "1"
+	Formats:
+		pcm
+
+Source #1059
+	State: RUNNING
+	Name: alsa_input.usb-Behringer_FLOW_8_03-FF-02-11-55-44-00.Direct__hw_F8__source
+	Description: FLOW 8 Direct FLOW 8
+	Driver: PipeWire
+	Sample Specification: s32le 10ch 48000Hz
+	Channel Map: aux0,aux1,aux2,aux3,aux4,aux5,aux6,aux7,aux8,aux9
+	Owner Module: 4294967295
+	Mute: no
+	Volume: aux0: 48287 /  74% / -7.96 dB,   aux1: 48287 /  74% / -7.96 dB,   aux2: 48287 /  74% / -7.96 dB,   aux3: 48287 /  74% / -7.96 dB,   aux4: 48287 /  74% / -7.96 dB,   aux5: 48287 /  74% / -7.96 dB,   aux6: 48287 /  74% / -7.96 dB,   aux7: 48287 /  74% / -7.96 dB,   aux8: 48287 /  74% / -7.96 dB,   aux9: 48287 /  74% / -7.96 dB
+	        balance 0.00
+	Base Volume: 65536 / 100% / 0.00 dB
+	Monitor of Sink: n/a
+	Latency: 0 usec, configured 0 usec
+	Flags: HARDWARE DECIBEL_VOLUME LATENCY 
+	Properties:
+		object.path = "alsa:pcm:1:hw:F8:capture"
+		api.alsa.path = "hw:F8"
+		api.alsa.open.ucm = "true"
+		api.alsa.pcm.card = "1"
+		api.alsa.pcm.stream = "capture"
+		audio.channels = "10"
+		audio.position = "AUX0,AUX1,AUX2,AUX3,AUX4,AUX5,AUX6,AUX7,AUX8,AUX9"
+		device.routes = "1"
+		alsa.mixer_device = "_ucm0005.hw:F8"
+		alsa.resolution_bits = "32"
+		device.api = "alsa"
+		device.class = "sound"
+		alsa.class = "generic"
+		alsa.subclass = "generic-mix"
+		alsa.name = "USB Audio"
+		alsa.id = "USB Audio"
+		alsa.subdevice = "0"
+		alsa.subdevice_name = "subdevice #0"
+		alsa.device = "0"
+		alsa.card = "1"
+		alsa.card_name = "FLOW 8"
+		alsa.long_card_name = "Behringer FLOW 8 at usb-0000:00:14.0-11, high speed"
+		alsa.driver_name = "snd_usb_audio"
+		device.profile.name = "Direct: hw:F8: source"
+		device.profile.description = "Direct FLOW 8"
+		card.profile.device = "1"
+		device.id = "146"
+		factory.name = "api.alsa.pcm.source"
+		priority.driver = "1936"
+		priority.session = "1936"
+		media.class = "Audio/Source"
+		node.nick = "FLOW 8"
+		node.name = "alsa_input.usb-Behringer_FLOW_8_03-FF-02-11-55-44-00.Direct__hw_F8__source"
+		device.description = "FLOW 8"
+		device.icon_name = "audio-input-microphone"
+		device.bus = "usb"
+		device.bus_path = "pci-0000:00:14.0-usb-0:11:1.0"
+		node.pause-on-idle = "false"
+		factory.id = "18"
+		clock.quantum-limit = "8192"
+		client.id = "32"
+		node.driver = "true"
+		factory.mode = "split"
+		audio.adapt.follower = ""
+		library.name = "audioconvert/libspa-audioconvert"
+		object.id = "64"
+		object.serial = "1059"
+		node.max-latency = "16384/48000"
+		device.enum.api = "udev"
+		api.alsa.card = "1"
+		api.alsa.card.name = "FLOW 8"
+		api.alsa.card.longname = "Behringer FLOW 8 at usb-0000:00:14.0-11, high speed"
+		device.plugged.usec = "52837408425"
+		sysfs.path = "/sys/devices/pci0000:00/0000:00:14.0/usb1/1-11/1-11:1.0/sound/card1"
+		device.bus-id = "usb-Behringer_FLOW_8_03-FF-02-11-55-44-00"
+		device.subsystem = "sound"
+		device.vendor.id = "0x1397"
+		device.vendor.name = "BEHRINGER International GmbH"
+		device.product.id = "0x050c"
+		device.product.name = "FLOW 8"
+		device.serial = "Behringer_FLOW_8_03-FF-02-11-55-44"
+		device.name = "alsa_card.usb-Behringer_FLOW_8_03-FF-02-11-55-44-00"
+		device.nick = "FLOW 8"
+		api.alsa.use-acp = "true"
+		api.acp.auto-profile = "false"
+		api.acp.auto-port = "false"
+		api.dbus.ReserveDevice1 = "Audio1"
+		device.string = "1"
+	Ports:
+		[In] Direct: Direct FLOW 8 (type: Unknown, priority: 1000, availability unknown)
+	Active Port: [In] Direct
+	Formats:
+		pcm
+
+Sink Input #69
+	Driver: PipeWire
+	Owner Module: n/a
+	Client: 68
+	Sink: 547
+	Sample Specification: s16le 1ch 44100Hz
+	Channel Map: mono
+	Format: pcm, format.sample_format = "\"s16le\""  format.rate = "44100"  format.channels = "1"  format.channel_map = "\"mono\""
+	Corked: no
+	Mute: no
+	Volume: mono: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	Buffer Latency: 0 usec
+	Sink Latency: 0 usec
+	Resample method: PipeWire
+	Properties:
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		application.name = "speech-dispatcher-espeak-ng"
+		application.process.id = "8574"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		application.process.binary = "sd_espeak-ng"
+		application.language = "C"
+		window.x11.display = ":0"
+		application.process.machine_id = "5e7e6e23755b1b6974b4fddba9f64381"
+		pulse.min.req = "1024/48000"
+		pulse.min.quantum = "1024/48000"
+		media.name = "playback"
+		node.rate = "1/44100"
+		node.latency = "941/44100"
+		stream.is-live = "true"
+		node.name = "speech-dispatcher-espeak-ng"
+		node.autoconnect = "true"
+		node.want-driver = "true"
+		media.class = "Stream/Output/Audio"
+		adapt.follower.spa-node = ""
+		object.register = "false"
+		factory.id = "6"
+		clock.quantum-limit = "8192"
+		factory.mode = "split"
+		audio.adapt.follower = ""
+		library.name = "audioconvert/libspa-audioconvert"
+		client.id = "50"
+		object.id = "51"
+		object.serial = "69"
+		pulse.attr.maxlength = "4194304"
+		pulse.attr.tlength = "5646"
+		pulse.attr.prebuf = "3766"
+		pulse.attr.minreq = "1882"
+		module-stream-restore.id = "sink-input-by-application-name:speech-dispatcher-espeak-ng"
+
+Sink Input #75
+	Driver: PipeWire
+	Owner Module: n/a
+	Client: 74
+	Sink: 547
+	Sample Specification: s16le 1ch 44100Hz
+	Channel Map: mono
+	Format: pcm, format.sample_format = "\"s16le\""  format.rate = "44100"  format.channels = "1"  format.channel_map = "\"mono\""
+	Corked: no
+	Mute: no
+	Volume: mono: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	Buffer Latency: 0 usec
+	Sink Latency: 0 usec
+	Resample method: PipeWire
+	Properties:
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		application.name = "speech-dispatcher-dummy"
+		application.process.id = "8581"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		application.process.binary = "sd_dummy"
+		application.language = "C"
+		window.x11.display = ":0"
+		application.process.machine_id = "5e7e6e23755b1b6974b4fddba9f64381"
+		pulse.min.req = "1024/48000"
+		pulse.min.quantum = "1024/48000"
+		media.name = "playback"
+		node.rate = "1/44100"
+		node.latency = "941/44100"
+		stream.is-live = "true"
+		node.name = "speech-dispatcher-dummy"
+		node.autoconnect = "true"
+		node.want-driver = "true"
+		media.class = "Stream/Output/Audio"
+		adapt.follower.spa-node = ""
+		object.register = "false"
+		factory.id = "6"
+		clock.quantum-limit = "8192"
+		factory.mode = "split"
+		audio.adapt.follower = ""
+		library.name = "audioconvert/libspa-audioconvert"
+		client.id = "56"
+		object.id = "57"
+		object.serial = "75"
+		pulse.attr.maxlength = "4194304"
+		pulse.attr.tlength = "5646"
+		pulse.attr.prebuf = "3766"
+		pulse.attr.minreq = "1882"
+		module-stream-restore.id = "sink-input-by-application-name:speech-dispatcher-dummy"
+
+Source Output #564
+	Driver: PipeWire
+	Owner Module: n/a
+	Client: 171
+	Source: 547
+	Sample Specification: float32le 1ch 25Hz
+	Channel Map: mono
+	Format: pcm, format.sample_format = "\"float32le\""  format.rate = "25"  format.channels = "1"  format.channel_map = "\"mono\""
+	Corked: no
+	Mute: no
+	Volume: mono: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	Buffer Latency: 0 usec
+	Source Latency: 0 usec
+	Resample method: PipeWire
+	Properties:
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		application.name = "PulseAudio Volume Control"
+		application.id = "org.PulseAudio.pavucontrol"
+		application.icon_name = "audio-card"
+		application.version = "5.0"
+		application.process.id = "27961"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		application.process.binary = "pavucontrol"
+		application.language = "en_US.UTF-8"
+		window.x11.display = ":0"
+		application.process.machine_id = "5e7e6e23755b1b6974b4fddba9f64381"
+		media.name = "Peak detect"
+		node.rate = "1/25"
+		node.latency = "1/25"
+		stream.monitor = "true"
+		node.target = "187"
+		target.object = "547"
+		stream.is-live = "true"
+		node.name = "PulseAudio Volume Control"
+		node.autoconnect = "true"
+		node.want-driver = "true"
+		node.dont-reconnect = "true"
+		media.class = "Stream/Input/Audio"
+		resample.peaks = "true"
+		channelmix.normalize = "true"
+		adapt.follower.spa-node = ""
+		object.register = "false"
+		factory.id = "6"
+		clock.quantum-limit = "8192"
+		factory.mode = "merge"
+		audio.adapt.follower = ""
+		library.name = "audioconvert/libspa-audioconvert"
+		client.id = "81"
+		object.id = "211"
+		object.serial = "564"
+		pulse.attr.maxlength = "4194304"
+		pulse.attr.fragsize = "4"
+		module-stream-restore.id = "source-output-by-application-id:org.PulseAudio.pavucontrol"
+
+Source Output #571
+	Driver: PipeWire
+	Owner Module: n/a
+	Client: 171
+	Source: 4294967295
+	Sample Specification: float32le 1ch 25Hz
+	Channel Map: mono
+	Format: pcm, format.sample_format = "\"float32le\""  format.rate = "25"  format.channels = "1"  format.channel_map = "\"mono\""
+	Corked: no
+	Mute: no
+	Volume: mono: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	Buffer Latency: 0 usec
+	Source Latency: 0 usec
+	Resample method: PipeWire
+	Properties:
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		application.name = "PulseAudio Volume Control"
+		application.id = "org.PulseAudio.pavucontrol"
+		application.icon_name = "audio-card"
+		application.version = "5.0"
+		application.process.id = "27961"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		application.process.binary = "pavucontrol"
+		application.language = "en_US.UTF-8"
+		window.x11.display = ":0"
+		application.process.machine_id = "5e7e6e23755b1b6974b4fddba9f64381"
+		media.name = "Peak detect"
+		node.rate = "1/25"
+		node.latency = "1/25"
+		stream.monitor = "true"
+		node.target = "51"
+		target.object = "69"
+		stream.is-live = "true"
+		node.name = "PulseAudio Volume Control"
+		node.autoconnect = "true"
+		node.want-driver = "true"
+		node.dont-reconnect = "true"
+		media.class = "Stream/Input/Audio"
+		resample.peaks = "true"
+		channelmix.normalize = "true"
+		adapt.follower.spa-node = ""
+		object.register = "false"
+		factory.id = "6"
+		clock.quantum-limit = "8192"
+		factory.mode = "merge"
+		audio.adapt.follower = ""
+		library.name = "audioconvert/libspa-audioconvert"
+		client.id = "81"
+		object.id = "116"
+		object.serial = "571"
+		pulse.attr.maxlength = "4194304"
+		pulse.attr.fragsize = "4"
+		module-stream-restore.id = "source-output-by-application-id:org.PulseAudio.pavucontrol"
+
+Source Output #572
+	Driver: PipeWire
+	Owner Module: n/a
+	Client: 171
+	Source: 4294967295
+	Sample Specification: float32le 1ch 25Hz
+	Channel Map: mono
+	Format: pcm, format.sample_format = "\"float32le\""  format.rate = "25"  format.channels = "1"  format.channel_map = "\"mono\""
+	Corked: no
+	Mute: no
+	Volume: mono: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	Buffer Latency: 0 usec
+	Source Latency: 0 usec
+	Resample method: PipeWire
+	Properties:
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		application.name = "PulseAudio Volume Control"
+		application.id = "org.PulseAudio.pavucontrol"
+		application.icon_name = "audio-card"
+		application.version = "5.0"
+		application.process.id = "27961"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		application.process.binary = "pavucontrol"
+		application.language = "en_US.UTF-8"
+		window.x11.display = ":0"
+		application.process.machine_id = "5e7e6e23755b1b6974b4fddba9f64381"
+		media.name = "Peak detect"
+		node.rate = "1/25"
+		node.latency = "1/25"
+		stream.monitor = "true"
+		node.target = "57"
+		target.object = "75"
+		stream.is-live = "true"
+		node.name = "PulseAudio Volume Control"
+		node.autoconnect = "true"
+		node.want-driver = "true"
+		node.dont-reconnect = "true"
+		media.class = "Stream/Input/Audio"
+		resample.peaks = "true"
+		channelmix.normalize = "true"
+		adapt.follower.spa-node = ""
+		object.register = "false"
+		factory.id = "6"
+		clock.quantum-limit = "8192"
+		factory.mode = "merge"
+		audio.adapt.follower = ""
+		library.name = "audioconvert/libspa-audioconvert"
+		client.id = "81"
+		object.id = "85"
+		object.serial = "572"
+		pulse.attr.maxlength = "4194304"
+		pulse.attr.fragsize = "4"
+		module-stream-restore.id = "source-output-by-application-id:org.PulseAudio.pavucontrol"
+
+Source Output #1078
+	Driver: PipeWire
+	Owner Module: n/a
+	Client: 171
+	Source: 1058
+	Sample Specification: float32le 1ch 25Hz
+	Channel Map: mono
+	Format: pcm, format.sample_format = "\"float32le\""  format.rate = "25"  format.channels = "1"  format.channel_map = "\"mono\""
+	Corked: no
+	Mute: no
+	Volume: mono: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	Buffer Latency: 0 usec
+	Source Latency: 0 usec
+	Resample method: PipeWire
+	Properties:
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		application.name = "PulseAudio Volume Control"
+		application.id = "org.PulseAudio.pavucontrol"
+		application.icon_name = "audio-card"
+		application.version = "5.0"
+		application.process.id = "27961"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		application.process.binary = "pavucontrol"
+		application.language = "en_US.UTF-8"
+		window.x11.display = ":0"
+		application.process.machine_id = "5e7e6e23755b1b6974b4fddba9f64381"
+		media.name = "Peak detect"
+		node.rate = "1/25"
+		node.latency = "1/25"
+		stream.monitor = "true"
+		node.target = "80"
+		target.object = "1058"
+		stream.is-live = "true"
+		node.name = "PulseAudio Volume Control"
+		node.autoconnect = "true"
+		node.want-driver = "true"
+		node.dont-reconnect = "true"
+		media.class = "Stream/Input/Audio"
+		resample.peaks = "true"
+		channelmix.normalize = "true"
+		adapt.follower.spa-node = ""
+		object.register = "false"
+		factory.id = "6"
+		clock.quantum-limit = "8192"
+		factory.mode = "merge"
+		audio.adapt.follower = ""
+		library.name = "audioconvert/libspa-audioconvert"
+		client.id = "81"
+		object.id = "83"
+		object.serial = "1078"
+		pulse.attr.maxlength = "4194304"
+		pulse.attr.fragsize = "4"
+		module-stream-restore.id = "source-output-by-application-id:org.PulseAudio.pavucontrol"
+
+Source Output #1092
+	Driver: PipeWire
+	Owner Module: n/a
+	Client: 171
+	Source: 1059
+	Sample Specification: float32le 1ch 25Hz
+	Channel Map: mono
+	Format: pcm, format.sample_format = "\"float32le\""  format.rate = "25"  format.channels = "1"  format.channel_map = "\"mono\""
+	Corked: no
+	Mute: no
+	Volume: mono: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	Buffer Latency: 0 usec
+	Source Latency: 0 usec
+	Resample method: PipeWire
+	Properties:
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		application.name = "PulseAudio Volume Control"
+		application.id = "org.PulseAudio.pavucontrol"
+		application.icon_name = "audio-card"
+		application.version = "5.0"
+		application.process.id = "27961"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		application.process.binary = "pavucontrol"
+		application.language = "en_US.UTF-8"
+		window.x11.display = ":0"
+		application.process.machine_id = "5e7e6e23755b1b6974b4fddba9f64381"
+		media.name = "Peak detect"
+		node.rate = "1/25"
+		node.latency = "1/25"
+		stream.monitor = "true"
+		node.target = "64"
+		target.object = "1059"
+		stream.is-live = "true"
+		node.name = "PulseAudio Volume Control"
+		node.autoconnect = "true"
+		node.want-driver = "true"
+		node.dont-reconnect = "true"
+		media.class = "Stream/Input/Audio"
+		resample.peaks = "true"
+		channelmix.normalize = "true"
+		adapt.follower.spa-node = ""
+		object.register = "false"
+		factory.id = "6"
+		clock.quantum-limit = "8192"
+		factory.mode = "merge"
+		audio.adapt.follower = ""
+		library.name = "audioconvert/libspa-audioconvert"
+		client.id = "81"
+		object.id = "105"
+		object.serial = "1092"
+		pulse.attr.maxlength = "4194304"
+		pulse.attr.fragsize = "4"
+		module-stream-restore.id = "source-output-by-application-id:org.PulseAudio.pavucontrol"
+
+Client #31
+	Driver: PipeWire
+	Owner Module: 2
+	Properties:
+		pipewire.protocol = "protocol-native"
+		pipewire.sec.pid = "3061"
+		pipewire.sec.uid = "1000"
+		pipewire.sec.gid = "1000"
+		pipewire.sec.label = "unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023"
+		module.id = "2"
+		object.id = "31"
+		object.serial = "31"
+		config.prefix = "media-session.d"
+		config.name = "media-session.conf"
+		cpu.max-align = "32"
+		default.clock.rate = "48000"
+		default.clock.quantum = "1024"
+		default.clock.min-quantum = "32"
+		default.clock.max-quantum = "2048"
+		default.clock.quantum-limit = "8192"
+		default.video.width = "640"
+		default.video.height = "480"
+		default.video.rate.num = "25"
+		default.video.rate.denom = "1"
+		log.level = "2"
+		clock.power-of-two-quantum = "true"
+		link.max-buffers = "64"
+		mem.warn-mlock = "false"
+		mem.allow-mlock = "true"
+		settings.check-quantum = "false"
+		settings.check-rate = "false"
+		application.name = "pipewire-media-session"
+		application.process.binary = "pipewire-media-session"
+		application.language = "en_US.UTF-8"
+		application.process.id = "3061"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		window.x11.display = ":0"
+		core.version = "0.3.56"
+		core.name = "pipewire-fedora-3061"
+		pipewire.access = "unrestricted"
+
+Client #32
+	Driver: PipeWire
+	Owner Module: 2
+	Properties:
+		pipewire.protocol = "protocol-native"
+		pipewire.sec.pid = "3061"
+		pipewire.sec.uid = "1000"
+		pipewire.sec.gid = "1000"
+		pipewire.sec.label = "unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023"
+		module.id = "2"
+		object.id = "32"
+		object.serial = "32"
+		config.prefix = "media-session.d"
+		config.name = "media-session.conf"
+		cpu.max-align = "32"
+		default.clock.rate = "48000"
+		default.clock.quantum = "1024"
+		default.clock.min-quantum = "32"
+		default.clock.max-quantum = "2048"
+		default.clock.quantum-limit = "8192"
+		default.video.width = "640"
+		default.video.height = "480"
+		default.video.rate.num = "25"
+		default.video.rate.denom = "1"
+		log.level = "2"
+		clock.power-of-two-quantum = "true"
+		link.max-buffers = "64"
+		mem.warn-mlock = "false"
+		mem.allow-mlock = "true"
+		settings.check-quantum = "false"
+		settings.check-rate = "false"
+		application.name = "pipewire-media-session"
+		application.process.binary = "pipewire-media-session"
+		application.language = "en_US.UTF-8"
+		application.process.id = "3061"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		window.x11.display = ":0"
+		core.version = "0.3.56"
+		core.name = "pipewire-fedora-3061"
+		pipewire.access = "unrestricted"
+
+Client #41
+	Driver: PipeWire
+	Owner Module: 2
+	Properties:
+		pipewire.protocol = "protocol-native"
+		pipewire.sec.pid = "3062"
+		pipewire.sec.uid = "1000"
+		pipewire.sec.gid = "1000"
+		pipewire.sec.label = "unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023"
+		module.id = "2"
+		object.id = "41"
+		object.serial = "41"
+		config.name = "pipewire-pulse.conf"
+		cpu.max-align = "32"
+		default.clock.rate = "48000"
+		default.clock.quantum = "1024"
+		default.clock.min-quantum = "32"
+		default.clock.max-quantum = "2048"
+		default.clock.quantum-limit = "8192"
+		default.video.width = "640"
+		default.video.height = "480"
+		default.video.rate.num = "25"
+		default.video.rate.denom = "1"
+		log.level = "2"
+		clock.power-of-two-quantum = "true"
+		link.max-buffers = "64"
+		mem.warn-mlock = "false"
+		mem.allow-mlock = "true"
+		settings.check-quantum = "false"
+		settings.check-rate = "false"
+		application.name = "pipewire-pulse"
+		application.process.binary = "pipewire-pulse"
+		application.language = "en_US.UTF-8"
+		application.process.id = "3062"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		window.x11.display = ":0"
+		core.version = "0.3.56"
+		core.name = "pipewire-fedora-3062"
+		pipewire.access = "unrestricted"
+
+Client #47
+	Driver: PipeWire
+	Owner Module: 2
+	Properties:
+		pipewire.protocol = "protocol-native"
+		pipewire.sec.pid = "3062"
+		pipewire.sec.uid = "1000"
+		pipewire.sec.gid = "1000"
+		pipewire.sec.label = "unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023"
+		module.id = "2"
+		object.id = "46"
+		object.serial = "47"
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		application.name = "GNOME Shell Volume Control"
+		application.id = "org.gnome.VolumeControl"
+		application.icon_name = "multimedia-volume-control"
+		application.version = "41.9"
+		application.process.id = "2885"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		application.process.binary = "gnome-shell"
+		application.language = "en_US.UTF-8"
+		window.x11.display = ":0"
+		application.process.machine_id = "5e7e6e23755b1b6974b4fddba9f64381"
+		config.name = "pipewire-pulse.conf"
+		cpu.max-align = "32"
+		default.clock.rate = "48000"
+		default.clock.quantum = "1024"
+		default.clock.min-quantum = "32"
+		default.clock.max-quantum = "2048"
+		default.clock.quantum-limit = "8192"
+		default.video.width = "640"
+		default.video.height = "480"
+		default.video.rate.num = "25"
+		default.video.rate.denom = "1"
+		log.level = "2"
+		clock.power-of-two-quantum = "true"
+		link.max-buffers = "64"
+		mem.warn-mlock = "false"
+		mem.allow-mlock = "true"
+		settings.check-quantum = "false"
+		settings.check-rate = "false"
+		core.version = "0.3.56"
+		core.name = "pipewire-fedora-3062"
+		pipewire.access = "unrestricted"
+
+Client #59
+	Driver: PipeWire
+	Owner Module: 2
+	Properties:
+		pipewire.protocol = "protocol-native"
+		pipewire.sec.pid = "3062"
+		pipewire.sec.uid = "1000"
+		pipewire.sec.gid = "1000"
+		pipewire.sec.label = "unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023"
+		module.id = "2"
+		object.id = "47"
+		object.serial = "59"
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		application.name = "GNOME Volume Control Media Keys"
+		application.id = "org.gnome.VolumeControl"
+		application.icon_name = "multimedia-volume-control"
+		application.version = ""
+		application.process.id = "3194"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		application.process.binary = "gsd-media-keys"
+		application.language = "en_US.UTF-8"
+		window.x11.display = ":0"
+		application.process.machine_id = "5e7e6e23755b1b6974b4fddba9f64381"
+		config.name = "pipewire-pulse.conf"
+		cpu.max-align = "32"
+		default.clock.rate = "48000"
+		default.clock.quantum = "1024"
+		default.clock.min-quantum = "32"
+		default.clock.max-quantum = "2048"
+		default.clock.quantum-limit = "8192"
+		default.video.width = "640"
+		default.video.height = "480"
+		default.video.rate.num = "25"
+		default.video.rate.denom = "1"
+		log.level = "2"
+		clock.power-of-two-quantum = "true"
+		link.max-buffers = "64"
+		mem.warn-mlock = "false"
+		mem.allow-mlock = "true"
+		settings.check-quantum = "false"
+		settings.check-rate = "false"
+		core.version = "0.3.56"
+		core.name = "pipewire-fedora-3062"
+		pipewire.access = "unrestricted"
+
+Client #60
+	Driver: PipeWire
+	Owner Module: 2
+	Properties:
+		pipewire.protocol = "protocol-native"
+		pipewire.sec.pid = "3062"
+		pipewire.sec.uid = "1000"
+		pipewire.sec.gid = "1000"
+		pipewire.sec.label = "unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023"
+		module.id = "2"
+		object.id = "48"
+		object.serial = "60"
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		application.name = "GSConnect"
+		application.id = "org.gnome.VolumeControl"
+		application.icon_name = "multimedia-volume-control"
+		application.version = "41.9"
+		application.process.id = "3402"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		application.process.binary = "gjs-console"
+		application.language = "en_US.UTF-8"
+		window.x11.display = ":0"
+		application.process.machine_id = "5e7e6e23755b1b6974b4fddba9f64381"
+		config.name = "pipewire-pulse.conf"
+		cpu.max-align = "32"
+		default.clock.rate = "48000"
+		default.clock.quantum = "1024"
+		default.clock.min-quantum = "32"
+		default.clock.max-quantum = "2048"
+		default.clock.quantum-limit = "8192"
+		default.video.width = "640"
+		default.video.height = "480"
+		default.video.rate.num = "25"
+		default.video.rate.denom = "1"
+		log.level = "2"
+		clock.power-of-two-quantum = "true"
+		link.max-buffers = "64"
+		mem.warn-mlock = "false"
+		mem.allow-mlock = "true"
+		settings.check-quantum = "false"
+		settings.check-rate = "false"
+		core.version = "0.3.56"
+		core.name = "pipewire-fedora-3062"
+		pipewire.access = "unrestricted"
+
+Client #61
+	Driver: PipeWire
+	Owner Module: 2
+	Properties:
+		pipewire.protocol = "protocol-native"
+		pipewire.sec.pid = "4040"
+		pipewire.sec.uid = "1000"
+		pipewire.sec.gid = "1000"
+		pipewire.sec.label = "unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023"
+		module.id = "2"
+		object.id = "49"
+		object.serial = "61"
+		pipewire.access.portal.is_portal = "true"
+		portal.monitor = "Camera"
+		log.level = "0"
+		cpu.max-align = "32"
+		default.clock.rate = "48000"
+		default.clock.quantum = "1024"
+		default.clock.min-quantum = "32"
+		default.clock.max-quantum = "2048"
+		default.clock.quantum-limit = "8192"
+		default.video.width = "640"
+		default.video.height = "480"
+		default.video.rate.num = "25"
+		default.video.rate.denom = "1"
+		clock.power-of-two-quantum = "true"
+		link.max-buffers = "64"
+		mem.warn-mlock = "false"
+		mem.allow-mlock = "true"
+		settings.check-quantum = "false"
+		settings.check-rate = "false"
+		application.name = "xdg-desktop-portal"
+		application.process.binary = "xdg-desktop-portal"
+		application.language = "en_US.UTF-8"
+		application.process.id = "4040"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		window.x11.display = ":0"
+		core.version = "0.3.56"
+		core.name = "pipewire-fedora-4040"
+		pipewire.access = "unrestricted"
+
+Client #68
+	Driver: PipeWire
+	Owner Module: 2
+	Properties:
+		pipewire.protocol = "protocol-native"
+		pipewire.sec.pid = "3062"
+		pipewire.sec.uid = "1000"
+		pipewire.sec.gid = "1000"
+		pipewire.sec.label = "unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023"
+		module.id = "2"
+		object.id = "50"
+		object.serial = "68"
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		application.name = "speech-dispatcher-espeak-ng"
+		application.process.id = "8574"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		application.process.binary = "sd_espeak-ng"
+		application.language = "C"
+		window.x11.display = ":0"
+		application.process.machine_id = "5e7e6e23755b1b6974b4fddba9f64381"
+		pulse.min.req = "1024/48000"
+		pulse.min.quantum = "1024/48000"
+		config.name = "pipewire-pulse.conf"
+		cpu.max-align = "32"
+		default.clock.rate = "48000"
+		default.clock.quantum = "1024"
+		default.clock.min-quantum = "32"
+		default.clock.max-quantum = "2048"
+		default.clock.quantum-limit = "8192"
+		default.video.width = "640"
+		default.video.height = "480"
+		default.video.rate.num = "25"
+		default.video.rate.denom = "1"
+		log.level = "2"
+		clock.power-of-two-quantum = "true"
+		link.max-buffers = "64"
+		mem.warn-mlock = "false"
+		mem.allow-mlock = "true"
+		settings.check-quantum = "false"
+		settings.check-rate = "false"
+		core.version = "0.3.56"
+		core.name = "pipewire-fedora-3062"
+		pipewire.access = "unrestricted"
+
+Client #74
+	Driver: PipeWire
+	Owner Module: 2
+	Properties:
+		pipewire.protocol = "protocol-native"
+		pipewire.sec.pid = "3062"
+		pipewire.sec.uid = "1000"
+		pipewire.sec.gid = "1000"
+		pipewire.sec.label = "unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023"
+		module.id = "2"
+		object.id = "56"
+		object.serial = "74"
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		application.name = "speech-dispatcher-dummy"
+		application.process.id = "8581"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		application.process.binary = "sd_dummy"
+		application.language = "C"
+		window.x11.display = ":0"
+		application.process.machine_id = "5e7e6e23755b1b6974b4fddba9f64381"
+		pulse.min.req = "1024/48000"
+		pulse.min.quantum = "1024/48000"
+		config.name = "pipewire-pulse.conf"
+		cpu.max-align = "32"
+		default.clock.rate = "48000"
+		default.clock.quantum = "1024"
+		default.clock.min-quantum = "32"
+		default.clock.max-quantum = "2048"
+		default.clock.quantum-limit = "8192"
+		default.video.width = "640"
+		default.video.height = "480"
+		default.video.rate.num = "25"
+		default.video.rate.denom = "1"
+		log.level = "2"
+		clock.power-of-two-quantum = "true"
+		link.max-buffers = "64"
+		mem.warn-mlock = "false"
+		mem.allow-mlock = "true"
+		settings.check-quantum = "false"
+		settings.check-rate = "false"
+		core.version = "0.3.56"
+		core.name = "pipewire-fedora-3062"
+		pipewire.access = "unrestricted"
+
+Client #80
+	Driver: PipeWire
+	Owner Module: 2
+	Properties:
+		pipewire.protocol = "protocol-native"
+		pipewire.sec.pid = "3062"
+		pipewire.sec.uid = "1000"
+		pipewire.sec.gid = "1000"
+		pipewire.sec.label = "unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023"
+		module.id = "2"
+		object.id = "62"
+		object.serial = "80"
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		application.icon_name = "firefox"
+		application.name = "Firefox"
+		application.version = "107.0"
+		application.process.id = "7431"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		application.process.binary = "firefox"
+		application.language = "en_US.UTF-8"
+		window.x11.display = ":0"
+		application.process.machine_id = "5e7e6e23755b1b6974b4fddba9f64381"
+		config.name = "pipewire-pulse.conf"
+		cpu.max-align = "32"
+		default.clock.rate = "48000"
+		default.clock.quantum = "1024"
+		default.clock.min-quantum = "32"
+		default.clock.max-quantum = "2048"
+		default.clock.quantum-limit = "8192"
+		default.video.width = "640"
+		default.video.height = "480"
+		default.video.rate.num = "25"
+		default.video.rate.denom = "1"
+		log.level = "2"
+		clock.power-of-two-quantum = "true"
+		link.max-buffers = "64"
+		mem.warn-mlock = "false"
+		mem.allow-mlock = "true"
+		settings.check-quantum = "false"
+		settings.check-rate = "false"
+		core.version = "0.3.56"
+		core.name = "pipewire-fedora-3062"
+		pipewire.access = "unrestricted"
+
+Client #86
+	Driver: PipeWire
+	Owner Module: 2
+	Properties:
+		pipewire.protocol = "protocol-native"
+		pipewire.sec.pid = "3062"
+		pipewire.sec.uid = "1000"
+		pipewire.sec.gid = "1000"
+		pipewire.sec.label = "unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023"
+		module.id = "2"
+		object.id = "63"
+		object.serial = "86"
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		application.name = "gsd-power"
+		window.x11.display = "wayland-0"
+		window.x11.screen = "0"
+		application.process.id = "3200"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		application.process.binary = "gsd-power"
+		application.language = "en_US.UTF-8"
+		application.process.machine_id = "5e7e6e23755b1b6974b4fddba9f64381"
+		config.name = "pipewire-pulse.conf"
+		cpu.max-align = "32"
+		default.clock.rate = "48000"
+		default.clock.quantum = "1024"
+		default.clock.min-quantum = "32"
+		default.clock.max-quantum = "2048"
+		default.clock.quantum-limit = "8192"
+		default.video.width = "640"
+		default.video.height = "480"
+		default.video.rate.num = "25"
+		default.video.rate.denom = "1"
+		log.level = "2"
+		clock.power-of-two-quantum = "true"
+		link.max-buffers = "64"
+		mem.warn-mlock = "false"
+		mem.allow-mlock = "true"
+		settings.check-quantum = "false"
+		settings.check-rate = "false"
+		core.version = "0.3.56"
+		core.name = "pipewire-fedora-3062"
+		pipewire.access = "unrestricted"
+
+Client #171
+	Driver: PipeWire
+	Owner Module: 2
+	Properties:
+		pipewire.protocol = "protocol-native"
+		pipewire.sec.pid = "3062"
+		pipewire.sec.uid = "1000"
+		pipewire.sec.gid = "1000"
+		pipewire.sec.label = "unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023"
+		module.id = "2"
+		object.id = "81"
+		object.serial = "171"
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		application.name = "PulseAudio Volume Control"
+		application.id = "org.PulseAudio.pavucontrol"
+		application.icon_name = "audio-card"
+		application.version = "5.0"
+		application.process.id = "27961"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		application.process.binary = "pavucontrol"
+		application.language = "en_US.UTF-8"
+		window.x11.display = ":0"
+		application.process.machine_id = "5e7e6e23755b1b6974b4fddba9f64381"
+		config.name = "pipewire-pulse.conf"
+		cpu.max-align = "32"
+		default.clock.rate = "48000"
+		default.clock.quantum = "1024"
+		default.clock.min-quantum = "32"
+		default.clock.max-quantum = "2048"
+		default.clock.quantum-limit = "8192"
+		default.video.width = "640"
+		default.video.height = "480"
+		default.video.rate.num = "25"
+		default.video.rate.denom = "1"
+		log.level = "2"
+		clock.power-of-two-quantum = "true"
+		link.max-buffers = "64"
+		mem.warn-mlock = "false"
+		mem.allow-mlock = "true"
+		settings.check-quantum = "false"
+		settings.check-rate = "false"
+		core.version = "0.3.56"
+		core.name = "pipewire-fedora-3062"
+		pipewire.access = "unrestricted"
+
+Client #461
+	Driver: PipeWire
+	Owner Module: 2
+	Properties:
+		pipewire.protocol = "protocol-native"
+		pipewire.sec.pid = "3062"
+		pipewire.sec.uid = "1000"
+		pipewire.sec.gid = "1000"
+		pipewire.sec.label = "unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023"
+		module.id = "2"
+		object.id = "173"
+		object.serial = "461"
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		application.name = "Firefox"
+		application.process.id = "7431"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		application.process.binary = "firefox"
+		application.language = "en_US.UTF-8"
+		window.x11.display = ":0"
+		application.process.machine_id = "5e7e6e23755b1b6974b4fddba9f64381"
+		config.name = "pipewire-pulse.conf"
+		cpu.max-align = "32"
+		default.clock.rate = "48000"
+		default.clock.quantum = "1024"
+		default.clock.min-quantum = "32"
+		default.clock.max-quantum = "2048"
+		default.clock.quantum-limit = "8192"
+		default.video.width = "640"
+		default.video.height = "480"
+		default.video.rate.num = "25"
+		default.video.rate.denom = "1"
+		log.level = "2"
+		clock.power-of-two-quantum = "true"
+		link.max-buffers = "64"
+		mem.warn-mlock = "false"
+		mem.allow-mlock = "true"
+		settings.check-quantum = "false"
+		settings.check-rate = "false"
+		core.version = "0.3.56"
+		core.name = "pipewire-fedora-3062"
+		pipewire.access = "unrestricted"
+
+Client #520
+	Driver: PipeWire
+	Owner Module: 2
+	Properties:
+		pipewire.protocol = "protocol-native"
+		pipewire.sec.pid = "3062"
+		pipewire.sec.uid = "1000"
+		pipewire.sec.gid = "1000"
+		pipewire.sec.label = "unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023"
+		module.id = "2"
+		object.id = "147"
+		object.serial = "520"
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		application.name = "Mutter"
+		application.process.id = "2885"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		application.process.binary = "gnome-shell"
+		application.language = "en_US.UTF-8"
+		window.x11.display = ":0"
+		application.process.machine_id = "5e7e6e23755b1b6974b4fddba9f64381"
+		config.name = "pipewire-pulse.conf"
+		cpu.max-align = "32"
+		default.clock.rate = "48000"
+		default.clock.quantum = "1024"
+		default.clock.min-quantum = "32"
+		default.clock.max-quantum = "2048"
+		default.clock.quantum-limit = "8192"
+		default.video.width = "640"
+		default.video.height = "480"
+		default.video.rate.num = "25"
+		default.video.rate.denom = "1"
+		log.level = "2"
+		clock.power-of-two-quantum = "true"
+		link.max-buffers = "64"
+		mem.warn-mlock = "false"
+		mem.allow-mlock = "true"
+		settings.check-quantum = "false"
+		settings.check-rate = "false"
+		core.version = "0.3.56"
+		core.name = "pipewire-fedora-3062"
+		pipewire.access = "unrestricted"
+
+Client #787
+	Driver: PipeWire
+	Owner Module: 2
+	Properties:
+		pipewire.protocol = "protocol-native"
+		pipewire.sec.pid = "3062"
+		pipewire.sec.uid = "1000"
+		pipewire.sec.gid = "1000"
+		pipewire.sec.label = "unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023"
+		module.id = "2"
+		object.id = "124"
+		object.serial = "787"
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		application.name = "pavucontrol"
+		window.x11.display = "wayland-0"
+		window.x11.screen = "0"
+		application.process.id = "27961"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		application.process.binary = "pavucontrol"
+		application.language = "en_US.UTF-8"
+		application.process.machine_id = "5e7e6e23755b1b6974b4fddba9f64381"
+		config.name = "pipewire-pulse.conf"
+		cpu.max-align = "32"
+		default.clock.rate = "48000"
+		default.clock.quantum = "1024"
+		default.clock.min-quantum = "32"
+		default.clock.max-quantum = "2048"
+		default.clock.quantum-limit = "8192"
+		default.video.width = "640"
+		default.video.height = "480"
+		default.video.rate.num = "25"
+		default.video.rate.denom = "1"
+		log.level = "2"
+		clock.power-of-two-quantum = "true"
+		link.max-buffers = "64"
+		mem.warn-mlock = "false"
+		mem.allow-mlock = "true"
+		settings.check-quantum = "false"
+		settings.check-rate = "false"
+		core.version = "0.3.56"
+		core.name = "pipewire-fedora-3062"
+		pipewire.access = "unrestricted"
+
+Client #1111
+	Driver: PipeWire
+	Owner Module: 2
+	Properties:
+		pipewire.protocol = "protocol-native"
+		pipewire.sec.pid = "3062"
+		pipewire.sec.uid = "1000"
+		pipewire.sec.gid = "1000"
+		pipewire.sec.label = "unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023"
+		module.id = "2"
+		object.id = "70"
+		object.serial = "1111"
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		application.process.id = "124381"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		application.process.binary = "pactl"
+		application.name = "pactl"
+		application.language = "en_US.UTF-8"
+		window.x11.display = ":0"
+		application.process.machine_id = "5e7e6e23755b1b6974b4fddba9f64381"
+		config.name = "pipewire-pulse.conf"
+		cpu.max-align = "32"
+		default.clock.rate = "48000"
+		default.clock.quantum = "1024"
+		default.clock.min-quantum = "32"
+		default.clock.max-quantum = "2048"
+		default.clock.quantum-limit = "8192"
+		default.video.width = "640"
+		default.video.height = "480"
+		default.video.rate.num = "25"
+		default.video.rate.denom = "1"
+		log.level = "2"
+		clock.power-of-two-quantum = "true"
+		link.max-buffers = "64"
+		mem.warn-mlock = "false"
+		mem.allow-mlock = "true"
+		settings.check-quantum = "false"
+		settings.check-rate = "false"
+		core.version = "0.3.56"
+		core.name = "pipewire-fedora-3062"
+		pipewire.access = "unrestricted"
+
+Sample #0
+	Name: bell-window-system
+	Sample Specification: s16le 2ch 44100Hz
+	Channel Map: front-left,front-right
+	Volume: front-left: 65536 / 100% / 0.00 dB,   front-right: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	Duration: 0.1s
+	Size: 24.0 KiB
+	Lazy: no
+	Filename: n/a
+	Properties:
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		application.name = "Mutter"
+		application.process.id = "2885"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		application.process.binary = "gnome-shell"
+		application.language = "en_US.UTF-8"
+		window.x11.display = ":0"
+		application.process.machine_id = "5e7e6e23755b1b6974b4fddba9f64381"
+		event.description = "Bell event"
+		event.id = "bell-window-system"
+		media.role = "event"
+		media.name = "bell-window-system"
+		media.filename = "/usr/share//sounds/freedesktop/stereo/bell.oga"
+
+Sample #1
+	Name: audio-volume-change
+	Sample Specification: s16le 2ch 44100Hz
+	Channel Map: front-left,front-right
+	Volume: front-left: 65536 / 100% / 0.00 dB,   front-right: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	Duration: 0.1s
+	Size: 11.5 KiB
+	Lazy: no
+	Filename: n/a
+	Properties:
+		client.api = "pipewire-pulse"
+		pulse.server.type = "unix"
+		application.name = "pavucontrol"
+		window.x11.display = "wayland-0"
+		window.x11.screen = "0"
+		application.process.id = "27961"
+		application.process.user = "fedora"
+		application.process.host = "fedora"
+		application.process.binary = "pavucontrol"
+		application.language = "en_US.UTF-8"
+		application.process.machine_id = "5e7e6e23755b1b6974b4fddba9f64381"
+		event.id = "audio-volume-change"
+		event.description = "Volume Control Feedback Sound"
+		media.role = "event"
+		media.name = "audio-volume-change"
+		media.filename = "/usr/share//sounds/freedesktop/stereo/audio-volume-change.oga"
+
+Card #40
+	Name: alsa_card.pci-0000_00_1f.3
+	Driver: alsa
+	Owner Module: n/a
+	Properties:
+		device.enum.api = "udev"
+		device.api = "alsa"
+		media.class = "Audio/Device"
+		api.alsa.path = "hw:0"
+		api.alsa.card = "0"
+		api.alsa.card.name = "HDA Intel PCH"
+		api.alsa.card.longname = "HDA Intel PCH at 0xec510000 irq 153"
+		device.plugged.usec = "22073351"
+		device.bus_path = "pci-0000:00:1f.3"
+		sysfs.path = "/sys/devices/pci0000:00/0000:00:1f.3/sound/card0"
+		device.bus = "pci"
+		device.subsystem = "sound"
+		device.vendor.id = "0x8086"
+		device.vendor.name = "Intel Corporation"
+		device.product.id = "0xa171"
+		device.product.name = "CM238 HD Audio Controller"
+		device.form_factor = "internal"
+		device.name = "alsa_card.pci-0000_00_1f.3"
+		device.description = "Built-in Audio"
+		device.nick = "HDA Intel PCH"
+		device.icon_name = "audio-card-pci"
+		api.alsa.use-acp = "true"
+		api.acp.auto-profile = "false"
+		api.acp.auto-port = "false"
+		api.dbus.ReserveDevice1 = "Audio0"
+		factory.id = "14"
+		client.id = "31"
+		object.id = "40"
+		object.serial = "40"
+		object.path = "alsa:pcm:0"
+		alsa.card = "0"
+		alsa.card_name = "HDA Intel PCH"
+		alsa.long_card_name = "HDA Intel PCH at 0xec510000 irq 153"
+		alsa.driver_name = "snd_hda_intel"
+		device.string = "0"
+	Profiles:
+		off: Off (sinks: 0, sources: 0, priority: 0, available: yes)
+		output:analog-stereo+input:analog-stereo: Analog Stereo Duplex (sinks: 1, sources: 1, priority: 6565, available: yes)
+		output:analog-stereo: Analog Stereo Output (sinks: 1, sources: 0, priority: 6500, available: yes)
+		output:hdmi-stereo+input:analog-stereo: Digital Stereo (HDMI) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 5965, available: no)
+		output:hdmi-stereo: Digital Stereo (HDMI) Output (sinks: 1, sources: 0, priority: 5900, available: no)
+		output:hdmi-stereo-extra1+input:analog-stereo: Digital Stereo (HDMI 2) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 5765, available: no)
+		output:hdmi-stereo-extra2+input:analog-stereo: Digital Stereo (HDMI 3) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 5765, available: no)
+		output:hdmi-stereo-extra3+input:analog-stereo: Digital Stereo (HDMI 4) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 5765, available: no)
+		output:hdmi-stereo-extra4+input:analog-stereo: Digital Stereo (HDMI 5) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 5765, available: no)
+		output:hdmi-stereo-extra1: Digital Stereo (HDMI 2) Output (sinks: 1, sources: 0, priority: 5700, available: no)
+		output:hdmi-stereo-extra2: Digital Stereo (HDMI 3) Output (sinks: 1, sources: 0, priority: 5700, available: no)
+		output:hdmi-stereo-extra3: Digital Stereo (HDMI 4) Output (sinks: 1, sources: 0, priority: 5700, available: no)
+		output:hdmi-stereo-extra4: Digital Stereo (HDMI 5) Output (sinks: 1, sources: 0, priority: 5700, available: no)
+		output:hdmi-surround+input:analog-stereo: Digital Surround 5.1 (HDMI) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 865, available: no)
+		output:hdmi-surround71+input:analog-stereo: Digital Surround 7.1 (HDMI) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 865, available: no)
+		output:hdmi-surround: Digital Surround 5.1 (HDMI) Output (sinks: 1, sources: 0, priority: 800, available: no)
+		output:hdmi-surround71: Digital Surround 7.1 (HDMI) Output (sinks: 1, sources: 0, priority: 800, available: no)
+		output:hdmi-surround-extra1+input:analog-stereo: Digital Surround 5.1 (HDMI 2) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 665, available: no)
+		output:hdmi-surround71-extra1+input:analog-stereo: Digital Surround 7.1 (HDMI 2) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 665, available: no)
+		output:hdmi-surround-extra2+input:analog-stereo: Digital Surround 5.1 (HDMI 3) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 665, available: no)
+		output:hdmi-surround71-extra2+input:analog-stereo: Digital Surround 7.1 (HDMI 3) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 665, available: no)
+		output:hdmi-surround-extra3+input:analog-stereo: Digital Surround 5.1 (HDMI 4) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 665, available: no)
+		output:hdmi-surround71-extra3+input:analog-stereo: Digital Surround 7.1 (HDMI 4) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 665, available: no)
+		output:hdmi-surround-extra4+input:analog-stereo: Digital Surround 5.1 (HDMI 5) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 665, available: no)
+		output:hdmi-surround71-extra4+input:analog-stereo: Digital Surround 7.1 (HDMI 5) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 665, available: no)
+		output:hdmi-surround-extra1: Digital Surround 5.1 (HDMI 2) Output (sinks: 1, sources: 0, priority: 600, available: no)
+		output:hdmi-surround71-extra1: Digital Surround 7.1 (HDMI 2) Output (sinks: 1, sources: 0, priority: 600, available: no)
+		output:hdmi-surround-extra2: Digital Surround 5.1 (HDMI 3) Output (sinks: 1, sources: 0, priority: 600, available: no)
+		output:hdmi-surround71-extra2: Digital Surround 7.1 (HDMI 3) Output (sinks: 1, sources: 0, priority: 600, available: no)
+		output:hdmi-surround-extra3: Digital Surround 5.1 (HDMI 4) Output (sinks: 1, sources: 0, priority: 600, available: no)
+		output:hdmi-surround71-extra3: Digital Surround 7.1 (HDMI 4) Output (sinks: 1, sources: 0, priority: 600, available: no)
+		output:hdmi-surround-extra4: Digital Surround 5.1 (HDMI 5) Output (sinks: 1, sources: 0, priority: 600, available: no)
+		output:hdmi-surround71-extra4: Digital Surround 7.1 (HDMI 5) Output (sinks: 1, sources: 0, priority: 600, available: no)
+		input:analog-stereo: Analog Stereo Input (sinks: 0, sources: 1, priority: 65, available: yes)
+		pro-audio: Pro Audio (sinks: 6, sources: 1, priority: 1, available: yes)
+	Active Profile: output:analog-stereo
+	Ports:
+		analog-input-internal-mic: Internal Microphone (type: Mic, priority: 8900, latency offset: 0 usec, availability group: Legacy 1, availability unknown)
+			Properties:
+				port.type = "mic"
+				port.availability-group = "Legacy 1"
+				device.icon_name = "audio-input-microphone"
+				card.profile.port = "0"
+			Part of profile(s): input:analog-stereo, output:analog-stereo+input:analog-stereo, output:hdmi-stereo+input:analog-stereo, output:hdmi-surround+input:analog-stereo, output:hdmi-surround71+input:analog-stereo, output:hdmi-stereo-extra1+input:analog-stereo, output:hdmi-surround-extra1+input:analog-stereo, output:hdmi-surround71-extra1+input:analog-stereo, output:hdmi-stereo-extra2+input:analog-stereo, output:hdmi-surround-extra2+input:analog-stereo, output:hdmi-surround71-extra2+input:analog-stereo, output:hdmi-stereo-extra3+input:analog-stereo, output:hdmi-surround-extra3+input:analog-stereo, output:hdmi-surround71-extra3+input:analog-stereo, output:hdmi-stereo-extra4+input:analog-stereo, output:hdmi-surround-extra4+input:analog-stereo, output:hdmi-surround71-extra4+input:analog-stereo
+		analog-input-headphone-mic: Microphone (type: Mic, priority: 8700, latency offset: 0 usec, availability group: Legacy 2, not available)
+			Properties:
+				port.type = "mic"
+				port.availability-group = "Legacy 2"
+				device.icon_name = "audio-input-microphone"
+				card.profile.port = "1"
+			Part of profile(s): input:analog-stereo, output:analog-stereo+input:analog-stereo, output:hdmi-stereo+input:analog-stereo, output:hdmi-surround+input:analog-stereo, output:hdmi-surround71+input:analog-stereo, output:hdmi-stereo-extra1+input:analog-stereo, output:hdmi-surround-extra1+input:analog-stereo, output:hdmi-surround71-extra1+input:analog-stereo, output:hdmi-stereo-extra2+input:analog-stereo, output:hdmi-surround-extra2+input:analog-stereo, output:hdmi-surround71-extra2+input:analog-stereo, output:hdmi-stereo-extra3+input:analog-stereo, output:hdmi-surround-extra3+input:analog-stereo, output:hdmi-surround71-extra3+input:analog-stereo, output:hdmi-stereo-extra4+input:analog-stereo, output:hdmi-surround-extra4+input:analog-stereo, output:hdmi-surround71-extra4+input:analog-stereo
+		analog-input-headset-mic: Headset Microphone (type: Headset, priority: 8800, latency offset: 0 usec, availability group: Legacy 2, not available)
+			Properties:
+				port.type = "headset"
+				port.availability-group = "Legacy 2"
+				device.icon_name = "audio-input-microphone"
+				card.profile.port = "2"
+			Part of profile(s): input:analog-stereo, output:analog-stereo+input:analog-stereo, output:hdmi-stereo+input:analog-stereo, output:hdmi-surround+input:analog-stereo, output:hdmi-surround71+input:analog-stereo, output:hdmi-stereo-extra1+input:analog-stereo, output:hdmi-surround-extra1+input:analog-stereo, output:hdmi-surround71-extra1+input:analog-stereo, output:hdmi-stereo-extra2+input:analog-stereo, output:hdmi-surround-extra2+input:analog-stereo, output:hdmi-surround71-extra2+input:analog-stereo, output:hdmi-stereo-extra3+input:analog-stereo, output:hdmi-surround-extra3+input:analog-stereo, output:hdmi-surround71-extra3+input:analog-stereo, output:hdmi-stereo-extra4+input:analog-stereo, output:hdmi-surround-extra4+input:analog-stereo, output:hdmi-surround71-extra4+input:analog-stereo
+		analog-output-speaker: Speakers (type: Speaker, priority: 10000, latency offset: 0 usec, availability group: Legacy 3, availability unknown)
+			Properties:
+				port.type = "speaker"
+				port.availability-group = "Legacy 3"
+				device.icon_name = "audio-speakers"
+				card.profile.port = "3"
+			Part of profile(s): output:analog-stereo, output:analog-stereo+input:analog-stereo
+		analog-output-headphones: Headphones (type: Headphones, priority: 9900, latency offset: 0 usec, availability group: Legacy 2, not available)
+			Properties:
+				port.type = "headphones"
+				port.availability-group = "Legacy 2"
+				device.icon_name = "audio-headphones"
+				card.profile.port = "4"
+			Part of profile(s): output:analog-stereo, output:analog-stereo+input:analog-stereo
+		hdmi-output-0: HDMI / DisplayPort (type: HDMI, priority: 5900, latency offset: 0 usec, availability group: Legacy 4, not available)
+			Properties:
+				port.type = "hdmi"
+				port.availability-group = "Legacy 4"
+				device.icon_name = "video-display"
+				card.profile.port = "5"
+			Part of profile(s): output:hdmi-stereo, output:hdmi-stereo+input:analog-stereo, output:hdmi-surround, output:hdmi-surround+input:analog-stereo, output:hdmi-surround71, output:hdmi-surround71+input:analog-stereo
+		hdmi-output-1: HDMI / DisplayPort 2 (type: HDMI, priority: 5800, latency offset: 0 usec, availability group: Legacy 5, not available)
+			Properties:
+				port.type = "hdmi"
+				port.availability-group = "Legacy 5"
+				device.icon_name = "video-display"
+				card.profile.port = "6"
+			Part of profile(s): output:hdmi-stereo-extra1, output:hdmi-stereo-extra1+input:analog-stereo, output:hdmi-surround-extra1, output:hdmi-surround-extra1+input:analog-stereo, output:hdmi-surround71-extra1, output:hdmi-surround71-extra1+input:analog-stereo
+		hdmi-output-2: HDMI / DisplayPort 3 (type: HDMI, priority: 5700, latency offset: 0 usec, availability group: Legacy 6, not available)
+			Properties:
+				port.type = "hdmi"
+				port.availability-group = "Legacy 6"
+				device.icon_name = "video-display"
+				card.profile.port = "7"
+			Part of profile(s): output:hdmi-stereo-extra2, output:hdmi-stereo-extra2+input:analog-stereo, output:hdmi-surround-extra2, output:hdmi-surround-extra2+input:analog-stereo, output:hdmi-surround71-extra2, output:hdmi-surround71-extra2+input:analog-stereo
+		hdmi-output-3: HDMI / DisplayPort 4 (type: HDMI, priority: 5600, latency offset: 0 usec, availability group: Legacy 7, not available)
+			Properties:
+				port.type = "hdmi"
+				port.availability-group = "Legacy 7"
+				device.icon_name = "video-display"
+				card.profile.port = "8"
+			Part of profile(s): output:hdmi-stereo-extra3, output:hdmi-stereo-extra3+input:analog-stereo, output:hdmi-surround-extra3, output:hdmi-surround-extra3+input:analog-stereo, output:hdmi-surround71-extra3, output:hdmi-surround71-extra3+input:analog-stereo
+		hdmi-output-4: HDMI / DisplayPort 5 (type: HDMI, priority: 5500, latency offset: 0 usec, availability group: Legacy 8, not available)
+			Properties:
+				port.type = "hdmi"
+				port.availability-group = "Legacy 8"
+				device.icon_name = "video-display"
+				card.profile.port = "9"
+			Part of profile(s): output:hdmi-stereo-extra4, output:hdmi-stereo-extra4+input:analog-stereo, output:hdmi-surround-extra4, output:hdmi-surround-extra4+input:analog-stereo, output:hdmi-surround71-extra4, output:hdmi-surround71-extra4+input:analog-stereo
+
+Card #1057
+	Name: alsa_card.usb-Behringer_FLOW_8_03-FF-02-11-55-44-00
+	Driver: alsa
+	Owner Module: n/a
+	Properties:
+		device.enum.api = "udev"
+		device.api = "alsa"
+		media.class = "Audio/Device"
+		api.alsa.path = "hw:1"
+		api.alsa.card = "1"
+		api.alsa.card.name = "FLOW 8"
+		api.alsa.card.longname = "Behringer FLOW 8 at usb-0000:00:14.0-11, high speed"
+		device.plugged.usec = "52837408425"
+		device.bus_path = "pci-0000:00:14.0-usb-0:11:1.0"
+		sysfs.path = "/sys/devices/pci0000:00/0000:00:14.0/usb1/1-11/1-11:1.0/sound/card1"
+		device.bus-id = "usb-Behringer_FLOW_8_03-FF-02-11-55-44-00"
+		device.bus = "usb"
+		device.subsystem = "sound"
+		device.vendor.id = "0x1397"
+		device.vendor.name = "BEHRINGER International GmbH"
+		device.product.id = "0x050c"
+		device.product.name = "FLOW 8"
+		device.serial = "Behringer_FLOW_8_03-FF-02-11-55-44"
+		device.name = "alsa_card.usb-Behringer_FLOW_8_03-FF-02-11-55-44-00"
+		device.description = "FLOW 8"
+		device.nick = "FLOW 8"
+		device.icon_name = "audio-card-usb"
+		api.alsa.use-acp = "true"
+		api.acp.auto-profile = "false"
+		api.acp.auto-port = "false"
+		api.dbus.ReserveDevice1 = "Audio1"
+		factory.id = "14"
+		client.id = "31"
+		object.id = "146"
+		object.serial = "1057"
+		object.path = "alsa:pcm:1"
+		alsa.card = "1"
+		alsa.card_name = "FLOW 8"
+		alsa.long_card_name = "Behringer FLOW 8 at usb-0000:00:14.0-11, high speed"
+		alsa.driver_name = "snd_usb_audio"
+		device.string = "1"
+	Profiles:
+		off: Off (sinks: 0, sources: 0, priority: 0, available: yes)
+		Direct: Direct Flow8 Recording (sinks: 1, sources: 1, priority: 1, available: yes)
+		Recording: Recording Mode (4 chan output, 10 chan input) (sinks: 2, sources: 11, priority: 1, available: yes)
+	Active Profile: Direct
+	Ports:
+		[Out] Direct: Direct FLOW 8 (type: Unknown, priority: 1000, latency offset: 0 usec, availability unknown)
+			Properties:
+				port.type = "unknown"
+				card.profile.port = "0"
+			Part of profile(s): Direct
+		[In] Direct: Direct FLOW 8 (type: Unknown, priority: 1000, latency offset: 0 usec, availability unknown)
+			Properties:
+				port.type = "unknown"
+				card.profile.port = "1"
+			Part of profile(s): Direct
+		[Out] Line2: USB-34 L/R (type: Line, priority: 200, latency offset: 0 usec, availability unknown)
+			Properties:
+				port.type = "line"
+				card.profile.port = "2"
+			Part of profile(s): Recording
+		[Out] Line1: USB-12 L/R (type: Line, priority: 100, latency offset: 0 usec, availability unknown)
+			Properties:
+				port.type = "line"
+				card.profile.port = "3"
+			Part of profile(s): Recording
+		[In] LineMaster: Master/Monitor L/R (type: Unknown, priority: 110, latency offset: 0 usec, availability unknown)
+			Properties:
+				port.type = "unknown"
+				card.profile.port = "4"
+			Part of profile(s): Recording
+		[In] Line78: Line-78 L/R (type: Line, priority: 109, latency offset: 0 usec, availability unknown)
+			Properties:
+				port.type = "line"
+				card.profile.port = "5"
+			Part of profile(s): Recording
+		[In] Line56: Line-56 L/R (type: Line, priority: 108, latency offset: 0 usec, availability unknown)
+			Properties:
+				port.type = "line"
+				card.profile.port = "6"
+			Part of profile(s): Recording
+		[In] Line8: Line/Inst(HiZ) 8 (R) (type: Line, priority: 107, latency offset: 0 usec, availability unknown)
+			Properties:
+				port.type = "line"
+				card.profile.port = "7"
+			Part of profile(s): Recording
+		[In] Line7: Line/Inst 7 (L) (type: Line, priority: 106, latency offset: 0 usec, availability unknown)
+			Properties:
+				port.type = "line"
+				card.profile.port = "8"
+			Part of profile(s): Recording
+		[In] Line6: Line/Inst(HiZ) 6 (R) (type: Line, priority: 105, latency offset: 0 usec, availability unknown)
+			Properties:
+				port.type = "line"
+				card.profile.port = "9"
+			Part of profile(s): Recording
+		[In] Line5: Line/Inst 5 (L) (type: Line, priority: 104, latency offset: 0 usec, availability unknown)
+			Properties:
+				port.type = "line"
+				card.profile.port = "10"
+			Part of profile(s): Recording
+		[In] Mic4: Mic 4 (type: Mic, priority: 103, latency offset: 0 usec, availability unknown)
+			Properties:
+				port.type = "mic"
+				card.profile.port = "11"
+			Part of profile(s): Recording
+		[In] Mic3: Mic 3 (type: Mic, priority: 102, latency offset: 0 usec, availability unknown)
+			Properties:
+				port.type = "mic"
+				card.profile.port = "12"
+			Part of profile(s): Recording
+		[In] Mic2: Mic 2 (type: Mic, priority: 101, latency offset: 0 usec, availability unknown)
+			Properties:
+				port.type = "mic"
+				card.profile.port = "13"
+			Part of profile(s): Recording
+		[In] Mic1: Mic 1 (type: Mic, priority: 100, latency offset: 0 usec, availability unknown)
+			Properties:
+				port.type = "mic"
+				card.profile.port = "14"
+			Part of profile(s): Recording
+
