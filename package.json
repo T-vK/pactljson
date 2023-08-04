@@ -1,8 +1,8 @@
 {
   "name": "pactljson",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A fully featured pactl wrapper that outputs JSON instead of pactl's native format.",
-  "main": "index.js",
+  "main": "index.mjs",
   "bin": {
     "pactljson": "cli.mjs"
   },
